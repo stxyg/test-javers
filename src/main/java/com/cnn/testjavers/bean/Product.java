@@ -11,13 +11,9 @@ import javax.persistence.ManyToOne;
 import lombok.Data;
 
 /**
- * drop  table  product;
- * create   table product(
- *   id int ,
- *  name varchar(10),
- * count  int,
- * store_id  int
- * );
+ * drop table product; create table product( id int primary key auto_increment, name varchar(20), count int, store_id
+ * int );
+ * 
  * @author ningning.cheng
  * @date 2021/10/18
  **/
@@ -25,7 +21,7 @@ import lombok.Data;
 @Entity
 public class Product {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private  String name;
     private  Integer count;

@@ -13,13 +13,9 @@ import javax.persistence.OneToMany;
 import lombok.Data;
 
 /**
- * drop  table  store;
- * create   table store(
- *   id int ,
- *  name varchar(10),
- * address   varchar(10),
- * zipCode  int
- * );
+ * drop table store; create table store( id int primary key auto_increment , name varchar(20), address varchar(30),
+ * zipCode int );
+ * 
  * @author ningning.cheng
  * @date 2021/10/18
  **/
@@ -28,7 +24,7 @@ import lombok.Data;
 public class Store {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
     private String name;
