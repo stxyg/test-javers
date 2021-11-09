@@ -22,18 +22,18 @@ javers:
     localDate: 'dd MMM yyyy'
     localTime: 'HH:mm:ss'
 
-#数据库连接
+#数据库连接(自己本人的连接)
 spring:
   datasource:
-    driver-class-name: org.h2.Driver
-    username: sa
-    password:
-    url: jdbc:h2:~/test
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.80.10:3306/javers_db
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
       use-new-id-generator-mappings: false
     show-sql: true
-    database-platform: org.hibernate.dialect.MySQLDialect
+    database-platform: org.hibernate.dialect.MySQL57Dialect
 server:
   port: 8099
