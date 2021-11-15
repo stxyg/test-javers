@@ -1,4 +1,4 @@
-package com.cnn.testjavers.demo.simple;
+package com.cnn.testjavers.demo.pojo;
 
 import org.javers.core.metamodel.annotation.Id;
 import org.javers.core.metamodel.annotation.TypeName;
@@ -20,6 +20,9 @@ public class Dog {
         this.age = age;
     }
 
-
-
+    public Dog(String name, Integer age, Home home) {
+        this.name = name;
+        this.age = age;
+        this.home = home;
+    }
 }

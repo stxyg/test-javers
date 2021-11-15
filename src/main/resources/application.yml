@@ -28,12 +28,12 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
-    url: jdbc:mysql://192.168.80.10:3306/javers_db
+    url: jdbc:mysql://localhost:3306/javers_db
   jpa:
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: validate
       use-new-id-generator-mappings: false
     show-sql: true
-    database-platform: org.hibernate.dialect.MySQL57Dialect
+    database-platform: org.hibernate.dialect.MySQL8Dialect
 server:
   port: 8099

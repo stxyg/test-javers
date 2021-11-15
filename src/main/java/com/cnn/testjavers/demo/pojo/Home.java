@@ -1,4 +1,4 @@
-package com.cnn.testjavers.demo.simple;
+package com.cnn.testjavers.demo.pojo;
 
 import lombok.Data;
 

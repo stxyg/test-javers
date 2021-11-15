@@ -1,4 +1,4 @@
-package com.cnn.testjavers.demo;
+package com.cnn.testjavers.demo.jql;
 
 import java.util.List;
 

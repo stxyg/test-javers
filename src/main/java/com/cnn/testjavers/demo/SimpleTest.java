@@ -1,10 +1,12 @@
-package com.cnn.testjavers.simple;
+package com.cnn.testjavers.demo;
 
 import org.javers.core.Changes;
 import org.javers.core.Javers;
 import org.javers.core.JaversBuilder;
 import org.javers.core.diff.Diff;
 import org.javers.repository.jql.QueryBuilder;
+
+import com.cnn.testjavers.demo.pojo.Cat;
 
 import lombok.extern.slf4j.Slf4j;
 

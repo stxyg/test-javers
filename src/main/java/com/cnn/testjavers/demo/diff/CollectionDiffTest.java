@@ -1,4 +1,4 @@
-package com.cnn.testjavers.demo;
+package com.cnn.testjavers.demo.diff;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.javers.core.Javers;
 import org.javers.core.JaversBuilder;
 import org.javers.core.diff.Diff;
 
-import com.cnn.testjavers.demo.simple.Dog;
+import com.cnn.testjavers.demo.pojo.Dog;
 
 import lombok.extern.slf4j.Slf4j;
 
